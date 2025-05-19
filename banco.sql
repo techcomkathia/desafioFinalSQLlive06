@@ -27,7 +27,7 @@ CREATE TABLE vaga (
 CREATE TABLE cliente_veiculo (
   fkCliente INT NOT NULL,
   fkVeiculo INT NOT NULL,
-  PRIMARY KEY (fkVeiculo),
+  PRIMARY KEY (fkCliente, fkVeiculo),
   FOREIGN KEY (fkCliente) REFERENCES cliente(idCliente),
   FOREIGN KEY (fkVeiculo) REFERENCES veiculo(idVeiculo)
 );
