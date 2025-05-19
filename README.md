@@ -85,7 +85,10 @@ Conforme os blocos forem finalizados, as questões dos blocos seguintes serão i
 
 # 🧱 Bloco 1 — DDL (40 pontos)
 
-![Diagrama ER](diagrama.png)
+
+
+![Imagem do projeto](diagrama.jpg)
+
 
 **Questão 1 (12 pts)** — 
 **Questão 2 (12 pts)** — 
