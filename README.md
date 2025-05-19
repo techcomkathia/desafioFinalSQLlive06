@@ -109,7 +109,7 @@ Conforme os blocos forem finalizados, as questões dos blocos seguintes serão i
 
 # 🧱 Bloco 1 — DDL (24 pontos)
 
-**Questão 2 (10 pts)** —  Crie a tabela `veiculo_vaga` para registrar as entradas e saídas dos veículos nas vagas. Essa tabela deve conter as colunas `idRegistro` (PK), `fkVeiculo`, `fkVaga`, `data_hora_entrada` e `data_hora_saida`
+**Questão 2 (10 pts)** —  Crie a tabela `veiculo_vaga` para registrar as entradas e saídas dos veículos nas vagas. Essa tabela deve conter as colunas `idVeiculo_vaga` (PK), `fkVeiculo`, `fkVaga`, `data_hora_entrada` e `data_hora_saida`
 
 **Questão 3 (7 pts)** — Altere a tabela `veiculo` para modificar a coluna `placa` de `INT` para `VARCHAR(8)`, pois as placas brasileiras seguem o padrão Mercosul que tem 8 caracteres (exemplo: ABC1D23).
 
