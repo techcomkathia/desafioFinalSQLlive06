@@ -121,12 +121,24 @@ Faça as inclusões dos dados nas respectivas tabelas com o arquivo inserts.sql
 --
 
 # 🧾 Bloco 2 — DML (26 pontos)
+**Questão 1 (10 pts)** — Insira um novo cliente:
+- Nome: Eduarda Ferreira
+- email: eduarda@email.com
+E o respectivo veículo:
+- Tipo: moto
+- Placa: EFX9D55
 
-**Questão 1 (12 pts)** — texto em breve
 
-**Questão 3 (6 pts)** — texto em breve
+**Importante**: certifique-se de que a tabela `cliente_veiculo` foi criada e que os `ALTER TABLE` do bloco anterior tenham sido realizados corretamente.
 
-**Questão 4 (8 pts)** — texto em breve
+
+**Questão 2 (6 pts)** — Cadastre a entrada do veículo de placa `EFX9D55` no estacionamento hoje às **18h** na vaga **5**.
+
+
+**Questão 3 (8 pts)** — Atualize o número de telefone para **empresa@empresa.com** para os clientes `Bruna Freitas`, `Igor Aragão` e `Pietra Lima` pois eles fazem uso de carro corporativo e a empresa solicitou essa alteração.
+
+
+
 
 
 # 🔍 Bloco 3 — DQL (50 pontos)
