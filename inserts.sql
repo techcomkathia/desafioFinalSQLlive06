@@ -1,58 +1,5 @@
-CREATE database desafioFinalLive06;
 
-use desafioFinalLive06;
-
-
-
-CREATE TABLE cliente (
-  idCliente INT AUTO_INCREMENT PRIMARY KEY,
-  nome VARCHAR(100) NOT NULL
-);
-
-
-CREATE TABLE veiculo (
-  idVeiculo INT AUTO_INCREMENT PRIMARY KEY,
-  placa INT NOT NULL,
-  tipo ENUM('carro', 'moto') NOT NULL
-);
-
-
-CREATE TABLE vaga (
-  idVaga INT AUTO_INCREMENT PRIMARY KEY,
-  numeroVaga INT NOT NULL,
-  tipoVaga ENUM('normal', 'deficiente', 'idoso', 'gestante') NOT NULL
-);
-
-
--- Questão 1
-CREATE TABLE cliente_veiculo (
-  idCliente INT,
-  idVeiculo INT,
-  PRIMARY KEY (idCliente, idVeiculo),
-  FOREIGN KEY (idCliente) REFERENCES cliente(idCliente),
-  FOREIGN KEY (idVeiculo) REFERENCES veiculo(idVeiculo)
-);
-
--- Questão 2
-CREATE TABLE veiculo_vaga (
-  idRegistro INT AUTO_INCREMENT PRIMARY KEY,
-  fkVeiculo INT,
-  fkVaga INT,
-  data_entrada DATETIME NOT NULL,
-  data_saida DATETIME,
-  FOREIGN KEY (fkVeiculo) REFERENCES veiculo(idVeiculo),
-  FOREIGN KEY (fkVaga) REFERENCES vaga(idVaga)
-);
-
--- Questão 3
-ALTER TABLE veiculo
-MODIFY COLUMN placa VARCHAR(8) NOT NULL;
-
--- Questão 4
-ALTER TABLE cliente
-ADD COLUMN email VARCHAR(150);
-
-INSERT INTO cliente (idCliente, nome, email)
+INSERT INTO cliente (idCliente, nomeCliente, email)
 VALUES (1, 'Henrique da Mata', 'samuel12@ig.com.br'),
  (2, 'Ana Laura Alves', 'emilly44@nascimento.com'),
  (3, 'Bruna da Paz', 'milena48@hotmail.com'),
@@ -157,7 +104,7 @@ VALUES (1, 'XNI1053', 'carro'),
 (58, 'VGE4592', 'carro');
 
 
-INSERT INTO cliente_veiculo ( idCliente, idVeiculo) 
+INSERT INTO cliente_veiculo ( fkCliente, fkVeiculo) 
 VALUES ( 1, 44),
  ( 2, 57),
  ( 2, 29),
@@ -246,7 +193,7 @@ VALUES (1, 1, 'gestante'),
 
 
 
-INSERT INTO veiculo_vaga (idRegistro, data_entrada, data_saida, fkveiculo, fkvaga) VALUES
+INSERT INTO veiculo_vaga (idVeiculo_vaga, data_hora_entrada, data_hora_saida, fkveiculo, fkvaga) VALUES
 (1, '2025-04-30 06:50:00', '2025-04-30 10:50:00', 1, 9),
 (2, '2025-05-17 20:33:32', '2025-05-17 22:33:32', 2, 15),
 (3, '2025-05-04 07:15:25', '2025-05-04 11:15:25', 3, 18),
