@@ -1,44 +1,98 @@
+CREATE database desafioFinalLive06;
+
+use desafioFinalLive06;
+
+
+
+CREATE TABLE cliente (
+  idCliente INT AUTO_INCREMENT PRIMARY KEY,
+  nome VARCHAR(100) NOT NULL
+);
+
+
+CREATE TABLE veiculo (
+  idVeiculo INT AUTO_INCREMENT PRIMARY KEY,
+  placa INT NOT NULL,
+  tipo ENUM('carro', 'moto') NOT NULL
+);
+
+
+CREATE TABLE vaga (
+  idVaga INT AUTO_INCREMENT PRIMARY KEY,
+  numeroVaga INT NOT NULL,
+  tipoVaga ENUM('normal', 'deficiente', 'idoso', 'gestante') NOT NULL
+);
+
+
+-- Questão 1
+CREATE TABLE cliente_veiculo (
+  idCliente INT,
+  idVeiculo INT,
+  PRIMARY KEY (idCliente, idVeiculo),
+  FOREIGN KEY (idCliente) REFERENCES cliente(idCliente),
+  FOREIGN KEY (idVeiculo) REFERENCES veiculo(idVeiculo)
+);
+
+-- Questão 2
+CREATE TABLE veiculo_vaga (
+  idRegistro INT AUTO_INCREMENT PRIMARY KEY,
+  fkVeiculo INT,
+  fkVaga INT,
+  data_entrada DATETIME NOT NULL,
+  data_saida DATETIME,
+  FOREIGN KEY (fkVeiculo) REFERENCES veiculo(idVeiculo),
+  FOREIGN KEY (fkVaga) REFERENCES vaga(idVaga)
+);
+
+-- Questão 3
+ALTER TABLE veiculo
+MODIFY COLUMN placa VARCHAR(8) NOT NULL;
+
+-- Questão 4
+ALTER TABLE cliente
+ADD COLUMN email VARCHAR(150);
+
 INSERT INTO cliente (idCliente, nome, email)
 VALUES (1, 'Henrique da Mata', 'samuel12@ig.com.br'),
-(2, 'Ana Laura Alves', 'emilly44@nascimento.com'),
-(3, 'Bruna da Paz', 'milena48@hotmail.com'),
-(4, 'Davi Luiz Araújo', 'isisrocha@costela.com'),
-(5, 'Dr. Lucca Fogaça', 'sophiejesus@bol.com.br'),
-(6, 'Pietra Lima', 'andrepereira@uol.com.br'),
-(7, 'Ana Beatriz Costela', 'anada-rocha@bol.com.br'),
-(8, 'Sra. Olivia Fernandes', 'ian39@ig.com.br'),
-(9, 'Kaique Sales', 'ana-sophiaferreira@nogueira.net'),
-(10, 'Vitor Teixeira', 'pedro-lucasteixeira@yahoo.com.br'),
-(11, 'Enzo Pinto', 'isabellada-rocha@moreira.com'),
-(12, 'João Lucas Ramos', 'ggoncalves@uol.com.br'),
-(13, 'Igor Aragão', 'calebe85@gomes.com'),
-(14, 'Ana Peixoto', 'xaragao@costa.com'),
-(15, 'Marcela Moreira', 'henrique41@barbosa.br'),
-(16, 'Davi Luiz Oliveira', 'nogueiramaria-vitoria@freitas.org'),
-(17, 'Laís Caldeira', 'ana-beatrizferreira@uol.com.br'),
-(18, 'Ana Sophia Lopes', 'hfernandes@ig.com.br'),
-(19, 'Carlos Eduardo Oliveira', 'juliavieira@gmail.com'),
-(20, 'Bruna Freitas', 'diaskaique@santos.org'),
-(21, 'Eloah Lima', 'teixeiraguilherme@ig.com.br'),
-(22, 'Emanuelly da Rosa', 'leandro14@bol.com.br'),
-(23, 'Juliana Teixeira', 'moreiraemanuella@uol.com.br'),
-(24, 'Vitor Hugo da Cunha', 'caldeiradavi-lucas@bol.com.br'),
-(25, 'Fernando Rodrigues', 'marcos-vinicius15@bol.com.br'),
-(26, 'Dra. Isabelly Ferreira', 'pintopedro-miguel@uol.com.br'),
-(27, 'Marcos Vinicius Barbosa', 'jsilveira@ig.com.br'),
-(28, 'Mariana Melo', 'joao-vitornogueira@da.br'),
-(29, 'Samuel Moura', 'augusto55@martins.br'),
-(30, 'Pedro Henrique Rodrigues', 'marianenogueira@hotmail.com'),
-(31, 'Sr. Thales Ramos', 'luiz-fernandoda-luz@ramos.br'),
-(32, 'Lucca Moreira', 'isabellaaragao@correia.net'),
-(33, 'Srta. Ana Laura Pinto', 'fda-rocha@bol.com.br'),
-(34, 'Pedro Lucas Lima', 'helena85@hotmail.com'),
-(35, 'Enzo Fogaça', 'cauada-paz@aragao.org'),
-(36, 'Heitor Cavalcanti', 'dpeixoto@rocha.br'),
-(37, 'João Vitor Costela', 'pedro-miguel41@gmail.com'),
-(38, 'Renan Vieira', 'juliafreitas@gmail.com'),
-(39, 'Ana Sophia Moraes', 'piresamanda@viana.com'),
-(40, 'Sr. Thales Cardoso', 'rodriguesbenjamin@cunha.com');
+ (2, 'Ana Laura Alves', 'emilly44@nascimento.com'),
+ (3, 'Bruna da Paz', 'milena48@hotmail.com'),
+ (4, 'Davi Luiz Araújo', 'isisrocha@costela.com'),
+ (5, 'Dr. Lucca Fogaça', 'sophiejesus@bol.com.br'),
+ (6, 'Pietra Lima', 'andrepereira@uol.com.br'),
+ (7, 'Ana Beatriz Costela', 'anada-rocha@bol.com.br'),
+ (8, 'Sra. Olivia Fernandes', 'ian39@ig.com.br'),
+ (9, 'Kaique Sales', 'ana-sophiaferreira@nogueira.net'),
+ (10, 'Vitor Teixeira', 'pedro-lucasteixeira@yahoo.com.br'),
+ (11, 'Enzo Pinto', 'isabellada-rocha@moreira.com'),
+ (12, 'João Lucas Ramos', 'ggoncalves@uol.com.br'),
+ (13, 'Igor Aragão', 'calebe85@gomes.com'),
+ (14, 'Ana Peixoto', 'xaragao@costa.com'),
+ (15, 'Marcela Moreira', 'henrique41@barbosa.br'),
+ (16, 'Davi Luiz Oliveira', 'nogueiramaria-vitoria@freitas.org'),
+ (17, 'Laís Caldeira', 'ana-beatrizferreira@uol.com.br'),
+ (18, 'Ana Sophia Lopes', 'hfernandes@ig.com.br'),
+ (19, 'Carlos Eduardo Oliveira', 'juliavieira@gmail.com'),
+ (20, 'Bruna Freitas', 'diaskaique@santos.org'),
+ (21, 'Eloah Lima', 'teixeiraguilherme@ig.com.br'),
+ (22, 'Emanuelly da Rosa', 'leandro14@bol.com.br'),
+ (23, 'Juliana Teixeira', 'moreiraemanuella@uol.com.br'),
+ (24, 'Vitor Hugo da Cunha', 'caldeiradavi-lucas@bol.com.br'),
+ (25, 'Fernando Rodrigues', 'marcos-vinicius15@bol.com.br'),
+ (26, 'Dra. Isabelly Ferreira', 'pintopedro-miguel@uol.com.br'),
+ (27, 'Marcos Vinicius Barbosa', 'jsilveira@ig.com.br'),
+ (28, 'Mariana Melo', 'joao-vitornogueira@da.br'),
+ (29, 'Samuel Moura', 'augusto55@martins.br'),
+ (30, 'Pedro Henrique Rodrigues', 'marianenogueira@hotmail.com'),
+ (31, 'Sr. Thales Ramos', 'luiz-fernandoda-luz@ramos.br'),
+ (32, 'Lucca Moreira', 'isabellaaragao@correia.net'),
+ (33, 'Srta. Ana Laura Pinto', 'fda-rocha@bol.com.br'),
+ (34, 'Pedro Lucas Lima', 'helena85@hotmail.com'),
+ (35, 'Enzo Fogaça', 'cauada-paz@aragao.org'),
+ (36, 'Heitor Cavalcanti', 'dpeixoto@rocha.br'),
+ (37, 'João Vitor Costela', 'pedro-miguel41@gmail.com'),
+ (38, 'Renan Vieira', 'juliafreitas@gmail.com'),
+ (39, 'Ana Sophia Moraes', 'piresamanda@viana.com'),
+ (40, 'Sr. Thales Cardoso', 'rodriguesbenjamin@cunha.com');
 
 
 
@@ -103,65 +157,65 @@ VALUES (1, 'XNI1053', 'carro'),
 (58, 'VGE4592', 'carro');
 
 
-INSERT INTO cliente_veiculo(idCliente, idVeiculo) 
-VALUES(1, 44),
-(2, 57),
-(2, 29),
-(3, 27),
-(4, 3),
-(4, 46),
-(5, 4),
-(6, 38),
-(7, 6),
-(8, 36),
-(8, 47),
-(9, 40),
-(9, 41),
-(10, 42),
-(10, 39),
-(11, 52),
-(12, 9),
-(13, 21),
-(13, 10),
-(14, 20),
-(14, 30),
-(15, 17),
-(15, 34),
-(16, 53),
-(17, 12),
-(18, 1),
-(18, 23),
-(19, 11),
-(20, 25),
-(21, 56),
-(22, 43),
-(23, 2),
-(23, 26),
-(24, 5),
-(25, 24),
-(26, 18),
-(26, 19),
-(27, 50),
-(27, 16),
-(28, 13),
-(28, 45),
-(29, 31),
-(30, 33),
-(31, 49),
-(31, 22),
-(32, 48),
-(33, 28),
-(33, 58),
-(34, 15),
-(34, 51),
-(35, 14),
-(36, 32),
-(36, 54),
-(37, 7),
-(37, 55),
-(38, 8),
-(39, 35),
-(40, 37);
+INSERT INTO cliente_veiculo ( idCliente, idVeiculo) 
+VALUES ( 1, 44),
+ ( 2, 57),
+ ( 2, 29),
+ ( 3, 27),
+ ( 4, 3),
+ ( 4, 46),
+ ( 5, 4),
+ ( 6, 38),
+ ( 7, 6),
+ ( 8, 36),
+ ( 8, 47),
+ ( 9, 40),
+ ( 9, 41),
+ ( 10, 42),
+ ( 10, 39),
+ ( 11, 52),
+ ( 12, 9),
+ ( 13, 21),
+ ( 13, 10),
+ ( 14, 20),
+ ( 14, 30),
+ ( 15, 17),
+ ( 15, 34),
+ ( 16, 53),
+ ( 17, 12),
+ ( 18, 1),
+ ( 18, 23),
+ ( 19, 11),
+ ( 20, 25),
+ ( 21, 56),
+ ( 22, 43),
+ ( 23, 2),
+ ( 23, 26),
+ ( 24, 5),
+ ( 25, 24),
+ (26, 18),
+ ( 26, 19),
+ ( 27, 50),
+ ( 27, 16),
+ ( 28, 13),
+ ( 28, 45),
+ ( 29, 31),
+ ( 30, 33),
+ ( 31, 49),
+ ( 31, 22),
+ ( 32, 48),
+ ( 33, 28),
+ ( 33, 58),
+ ( 34, 15),
+ ( 34, 51),
+ ( 35, 14),
+ ( 36, 32),
+ ( 36, 54),
+ ( 37, 7),
+ ( 37, 55),
+ ( 38, 8),
+ ( 39, 35),
+ ( 40, 37);
 
 
 
@@ -192,7 +246,7 @@ VALUES (1, 1, 'gestante'),
 
 
 
-INSERT INTO veiculo_vaga (id, dataEntrada, dataSaida, veiculo_id, vaga_id) VALUES
+INSERT INTO veiculo_vaga (idRegistro, data_entrada, data_saida, fkveiculo, fkvaga) VALUES
 (1, '2025-04-30 06:50:00', '2025-04-30 10:50:00', 1, 9),
 (2, '2025-05-17 20:33:32', '2025-05-17 22:33:32', 2, 15),
 (3, '2025-05-04 07:15:25', '2025-05-04 11:15:25', 3, 18),
