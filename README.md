@@ -74,54 +74,68 @@ CREATE TABLE vaga (
 
 # 📊 Total de Pontos: 100
 
-- Bloco 1 (DDL): 40 pts  
-- Bloco 2 (DML): 30 pts  
-- Bloco 3 (DQL): 30 pts  
+- Bloco 1 (DDL): 26 pts  
+- Bloco 2 (DML): 26 pts  
+- Bloco 3 (DQL): 48 pts  
 
 ---
 
 > Os alunos devem versionar os arquivos no GitHub e apresentar os scripts na ordem dos blocos, com correção ao vivo.
 Conforme os blocos forem finalizados, as questões dos blocos seguintes serão incluídas. 
 
-# 🧱 Bloco 1 — DDL (40 pontos)
+
+## ✅ Cronograma com Gabaritos Intercalados
+
+| Horário         | Atividade                                 |
+|-----------------|--------------------------------------------|
+| **18h45 – 19h20** | Bloco 1 — DDL (35 min)                    |
+| **19h20 – 19h30** | Correção + Gabarito DDL (10 min)          |
+| **19h30 – 20h05** | Bloco 2 — DML (35 min)                    |
+| **20h05 – 20h15** | Correção + Gabarito DML (10 min)          |
+| **20h15 – 20h30** | **Intervalo (15 min)**                    |
+| **20h30 – 21h25** | Bloco 3 — DQL (55 min)                    |
+| **21h25 – 21h40** | Correção + Gabarito DQL (15 min)          |
+| **21h40 – 21h45** | Encerramento, dúvidas finais e avisos     |
+
+---
+
+
+# 🧱 Bloco 1 — DDL (26 pontos)
 
 
 
 ![Imagem do projeto](diagrama.jpg)
 
 
-**Questão 1 (12 pts)** — texto em breve
+
 
 **Questão 2 (12 pts)** — texto em breve
 
-**Questão 3 (8 pts)** — texto em breve
+**Questão 3 (7 pts)** — texto em breve
 
-**Questão 4 (8 pts)** — texto em breve
+**Questão 4 (7 pts)** — texto em breve
 
----
 
-# 🧾 Bloco 2 — DML (30 pontos)
 
-**Questão 1 (10 pts)** — texto em breve
+# 🧾 Bloco 2 — DML (26 pontos)
 
-**Questão 2 (6 pts)** — texto em breve
-
-**Questão 3 (6 pts)** — texto em breve
-
-**Questão 4 (8 pts)** — texto em breve
----
-
-# 🔍 Bloco 3 — DQL (30 pontos)
-
-**Questão 1 (5 pts)** — texto em breve
-
-**Questão 2 (6 pts)** — texto em breve
+**Questão 1 (12 pts)** — texto em breve
 
 **Questão 3 (6 pts)** — texto em breve
 
 **Questão 4 (8 pts)** — texto em breve
 
-**Questão 5 (5 pts)** — texto em breve
+
+# 🔍 Bloco 3 — DQL (48 pontos)
+
+**Questão 1 (11 pts)** — texto em breve
+
+**Questão 2 (11 pts)** — texto em breve
+
+**Questão 3 (12 pts)** — texto em breve
+
+**Questão 4 (14 pts)** — texto em breve
+
 
 ---
 
