@@ -90,28 +90,28 @@ Conforme os blocos forem finalizados, as questões dos blocos seguintes serão i
 ![Imagem do projeto](diagrama.jpg)
 
 
-**Questão 1 (12 pts)** — 
-**Questão 2 (12 pts)** — 
-**Questão 3 (8 pts)** —
-**Questão 4 (8 pts)** — 
+**Questão 1 (12 pts)** — texto em breve
+**Questão 2 (12 pts)** — texto em breve
+**Questão 3 (8 pts)** — texto em breve
+**Questão 4 (8 pts)** — texto em breve
 
 ---
 
 # 🧾 Bloco 2 — DML (30 pontos)
 
-**Questão 1 (10 pts)** —
-**Questão 2 (6 pts)** — 
-**Questão 3 (6 pts)** — 
-**Questão 4 (8 pts)** — 
+**Questão 1 (10 pts)** — texto em breve
+**Questão 2 (6 pts)** — texto em breve
+**Questão 3 (6 pts)** — texto em breve
+**Questão 4 (8 pts)** — texto em breve
 ---
 
 # 🔍 Bloco 3 — DQL (30 pontos)
 
-**Questão 1 (5 pts)** — 
-**Questão 2 (6 pts)** — 
-**Questão 3 (6 pts)** — 
-**Questão 4 (8 pts)** — 
-**Questão 5 (5 pts)** — 
+**Questão 1 (5 pts)** — texto em breve
+**Questão 2 (6 pts)** — texto em breve
+**Questão 3 (6 pts)** — texto em breve
+**Questão 4 (8 pts)** — texto em breve
+**Questão 5 (5 pts)** — texto em breve
 
 ---
 
