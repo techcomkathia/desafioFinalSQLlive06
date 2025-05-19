@@ -91,8 +91,11 @@ Conforme os blocos forem finalizados, as questões dos blocos seguintes serão i
 
 
 **Questão 1 (12 pts)** — texto em breve
+
 **Questão 2 (12 pts)** — texto em breve
+
 **Questão 3 (8 pts)** — texto em breve
+
 **Questão 4 (8 pts)** — texto em breve
 
 ---
@@ -100,17 +103,24 @@ Conforme os blocos forem finalizados, as questões dos blocos seguintes serão i
 # 🧾 Bloco 2 — DML (30 pontos)
 
 **Questão 1 (10 pts)** — texto em breve
+
 **Questão 2 (6 pts)** — texto em breve
+
 **Questão 3 (6 pts)** — texto em breve
+
 **Questão 4 (8 pts)** — texto em breve
 ---
 
 # 🔍 Bloco 3 — DQL (30 pontos)
 
 **Questão 1 (5 pts)** — texto em breve
+
 **Questão 2 (6 pts)** — texto em breve
+
 **Questão 3 (6 pts)** — texto em breve
+
 **Questão 4 (8 pts)** — texto em breve
+
 **Questão 5 (5 pts)** — texto em breve
 
 ---
