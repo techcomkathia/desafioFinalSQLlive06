@@ -7,7 +7,7 @@ O desafio está dividido em **3 blocos**, contemplando os comandos DDL, DML e DQ
 
 
 Para organizar seu repositório siga o seguintes passos:
-### 1. 🍴 Crie um novo repositório no seu GitHub
+### 1. 🧾 Crie um novo repositório no seu GitHub
 - Crie um novo repositório 
 - Dê um nome ao repositório de 'Desafio SQL'.
 - **Não** adicione README, `.gitignore` ou licença (para evitar conflitos).
