@@ -17,7 +17,7 @@ Abra o terminal e execute:
 
 ```bash
 git clone https://github.com/techcomkathia/desafioFinalSQLlive06.git
-cd repositorio-exemplo
+cd desafioFinalSQLlive06
 ```
 ### 3. Configure o repositório clonado para o seu repositório da atividade recém criado.
 Verifique o remoto atual:
