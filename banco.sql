@@ -21,3 +21,13 @@ CREATE TABLE vaga (
   numeroVaga INT NOT NULL,
   tipoVaga ENUM('normal', 'deficiente', 'idoso', 'gestante') NOT NULL
 );
+
+
+
+CREATE TABLE cliente_veiculo (
+  fkCliente INT NOT NULL,
+  fkVeiculo INT NOT NULL,
+  PRIMARY KEY (fkVeiculo),
+  FOREIGN KEY (fkCliente) REFERENCES cliente(idCliente),
+  FOREIGN KEY (fkVeiculo) REFERENCES veiculo(idVeiculo)
+);
