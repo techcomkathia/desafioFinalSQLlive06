@@ -17,7 +17,7 @@ Abra o terminal e execute:
 
 ```bash
 git clone https://github.com/techcomkathia/desafioFinalSQLlive06.git
-cd desafioFinalSQLlive06
+cd repositorio-exemplo
 ```
 ### 3. Configure o repositório clonado para o seu repositório da atividade recém criado.
 Verifique o remoto atual:
@@ -88,34 +88,37 @@ Conforme os blocos forem finalizados, as questões dos blocos seguintes serão i
 
 | Horário         | Atividade                                 |
 |-----------------|--------------------------------------------|
-| **18h45 – 19h20** | Bloco 1 — DDL (35 min)                    |
-| **19h20 – 19h30** | Correção + Gabarito DDL (10 min)          |
-| **19h30 – 20h05** | Bloco 2 — DML (35 min)                    |
-| **20h05 – 20h15** | Correção + Gabarito DML (10 min)          |
-| **20h15 – 20h30** | **Intervalo (15 min)**                    |
-| **20h30 – 21h25** | Bloco 3 — DQL (55 min)                    |
+| **19h10 – 19h25** | Bloco 1 — DDL (20 min)                    |
+| **19h25 – 19h30** | Correção + Gabarito DDL (5 min)           |
+| **19h30 – 19h55** | Bloco 2 — DML (25 min)                    |
+| **19h55 – 20h00** | Correção + Gabarito DML (10 min)          |
+| **20h00 – 20h15** | **Intervalo (15 min)**                    |
+| **20h15 – 21h25** | Bloco 3 — DQL (55 min)                    |
 | **21h25 – 21h40** | Correção + Gabarito DQL (15 min)          |
 | **21h40 – 21h45** | Encerramento, dúvidas finais e avisos     |
 
 ---
 
 
-# 🧱 Bloco 1 — DDL (24 pontos)
+
 
 
 
 ![Imagem do projeto](diagrama.jpg)
 
 
+# 🧱 Bloco 1 — DDL (24 pontos)
+
+**Questão 2 (10 pts)** —  Crie a tabela `veiculo_vaga` para registrar as entradas e saídas dos veículos nas vagas. Essa tabela deve conter as colunas `idRegistro` (PK), `fkVeiculo`, `fkVaga`, `data_hora_entrada` e `data_hora_saida`
+
+**Questão 3 (7 pts)** — Altere a tabela `veiculo` para modificar a coluna `placa` de `INT` para `VARCHAR(8)`, pois as placas brasileiras seguem o padrão Mercosul que tem 8 caracteres (exemplo: ABC1D23).
 
 
-**Questão 2 (10 pts)** — texto em breve
+**Questão 4 (7 pts)** —  Adicione a coluna `email` do tipo `VARCHAR(150)` na tabela `cliente`
 
-**Questão 3 (7 pts)** — texto em breve
-
-**Questão 4 (7 pts)** — texto em breve
-
-
+--
+Faça as inclusões dos dados nas respectivas tabelas com o arquivo inserts.sql
+--
 
 # 🧾 Bloco 2 — DML (26 pontos)
 
