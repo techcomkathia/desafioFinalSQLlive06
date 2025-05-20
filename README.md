@@ -135,7 +135,7 @@ E o respectivo veículo:
 **Questão 2 (6 pts)** — Cadastre a entrada do veículo de placa `EFX9D55` no estacionamento hoje às **18h** na vaga **5**.
 
 
-**Questão 3 (8 pts)** — Atualize o número de telefone para **empresa@empresa.com** para os clientes `Bruna Freitas`, `Igor Aragão` e `Pietra Lima` pois eles fazem uso de carro corporativo e a empresa solicitou essa alteração.
+**Questão 3 (8 pts)** — Atualize o email  para **empresa@empresa.com** para os clientes `Bruna Freitas`, `Igor Aragão` e `Pietra Lima` pois eles fazem uso de carro corporativo e a empresa solicitou essa alteração.
 
 
 
