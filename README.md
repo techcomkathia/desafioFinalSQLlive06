@@ -143,15 +143,22 @@ E o respectivo veículo:
 
 # 🔍 Bloco 3 — DQL (50 pontos)
 
-**Questão 1 (8 pts)** — texto em breve
 
-**Questão 2 (10 pts)** — texto em breve
 
-**Questão 3 (10 pts)** — texto em breve
+**Questão 1 (5 pts)** — Quantos veículos estão cadastrados no sistema?
 
-**Questão 4 (12 pts)** — texto em breve
 
-**Questão 5 (10 pts)** — texto em breve
+**Questão 2 (6 pts)** — Quantos veículos já utilizaram **cada tipo de vaga**?
+
+
+**Questão 3 (6 pts)** — Mostre em **ordem alfabética** os nomes e emails dos clientes que possuem motos.
+
+
+**Questão 4 (8 pts)** — Considerando um valor fixo por tipo de veículo (moto: R$8, carro: R$15), calcule o valor **total faturado** com todos os estacionamentos.
+
+
+**Questão 5 (5 pts)** — Quantos veículos de **cada tipo** estacionaram na **vaga 8**?
+
 
 
 
